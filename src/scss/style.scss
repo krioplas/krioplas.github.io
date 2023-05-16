@@ -1,0 +1,78 @@
+$color-text: #7e7e82;
+$border-menu: #b8ffec;
+$color-icons: #ff3e79;
+$color-border: #eaeaea;
+$border-bottom: #d9fff5;
+$gradient:linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+$border: #EAEAEA;
+@import './normalize.css';
+@import '../../node_modules//swiper/swiper-bundle.min.css';
+@import './header';
+@import './menu';
+@import './info';
+@import './slider-brand';
+@import './slider-type';
+@import './slider-price';
+@import './price-info';
+@import './footer';
+@import './burger';
+@import './cps-content';
+@import './feedback';
+
+
+
+
+
+@font-face {
+  font-family: 'TT Lakes-Medium';
+  src: url('../fonts/TTLakes-Medium.eot');
+  src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+    url('../fonts/TTLakes-Medium.eot?#infix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Medium.woff') format('woff'),
+    url('../fonts/TTLakes-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'TT Lakes-Regular';
+  src: url('../fonts/TTLakes-Regular.eot');
+  src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+    url('../fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Regular.woff') format('woff'),
+    url('../fonts/TTLakes-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'TT Lakes-Bold';
+  src: url('../fonts/TTLakes-Bold.eot');
+  src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+    url('../fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Bold.woff') format('woff'),
+    url('../fonts/TTLakes-Bold.ttf') format('truetype');
+}
+body {
+  font-family: 'TT Lakes-Regular', sans-serif;
+}
+.swiper-pagination-bullet-active{
+  background: #7e7e82 !important;
+}
+.icons-size {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.icons-size:hover{
+  animation: shake-rectangle-02 .16s infinite alternate;
+
+}
+.slide-price-button:hover{
+  animation: shake-rectangle-02 .16s infinite alternate;
+}
+
+.slider-content__link:hover{
+  animation: shake-rectangle-02 .16s infinite alternate;
+  }
+
+@keyframes shake-rectangle-02 {
+  0% { transform: translate(-1px, 1px) rotate(-7deg); }
+  33% { transform: translate(-2px, 2px) rotate(7deg); }
+  66% { transform: translate(2px, 2px) rotate(-7deg); }
+  100% { transform: translate(2px, 2px) rotate(7deg); }
+}

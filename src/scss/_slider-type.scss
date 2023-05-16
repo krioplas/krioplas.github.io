@@ -1,0 +1,71 @@
+.slider-type{
+  padding-bottom: 24px;
+  border-bottom: 1px solid $border-bottom;
+
+  .slider-type__head{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 56px;
+    background: $gradient;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $color-text;
+    padding-left: 24px;
+
+  }
+  .swiper-type{
+    .more-button{
+      font-family: 'TT Lakes-Medium', sans-serif;
+      border: none;
+      font-size: 16px;
+      margin-left: 8px;
+      padding-left: 16px;
+      background: no-repeat left url(../img/hiding-button.png);
+    }
+
+    .more-button-active{
+      background-image: url(../img/hiding-button-rotate.png);
+    }
+
+    
+    .swiper-wrapper{
+      display: flex;
+      justify-content: space-between;
+      padding-top: 16px;
+      .swiper-slide{
+        width: 240px;
+        height: 160px;
+        background: white;
+        border: 2px solid $color-border;
+        border-radius: 6px;
+       
+        .slider-content-repair{
+          padding: 16px;
+          .slider-content__link{
+            position: absolute;
+            bottom: 16px;
+            right: 16px;
+          }
+        }
+      }
+    }
+  
+  }
+  @media (min-width: 768px) {
+    .swiper{
+      
+      .swiper-wrapper{
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+        overflow: hidden;
+        height: 175px;
+      }
+    }
+  }
+}
+
+.swiper-button-active{
+  height: 100% !important;
+ }

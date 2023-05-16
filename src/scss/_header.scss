@@ -1,0 +1,77 @@
+.main-content{
+  max-width: 1120px;
+  background-color: #f8f8f8;
+}
+.header {
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  height: 90px;
+  font-family: 'TT Lakes-Regular', sans-serif;
+  border-bottom: 1px solid $border-bottom;
+  background: #fff;
+
+  .header__burger {
+    width: 40px;
+    height: 40px;
+    background: no-repeat center $color-icons url(../img/icons/burger.png);
+  }
+  .header__logo {
+    padding-left: 16px;
+  }
+  .header-icons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    .header-icons-tablet {
+      display: flex;
+
+      .header-icons-tablet__phone {
+        background: no-repeat center $color-icons url(../img/icons/call.png);
+      }
+      .header-icons-tablet__chat {
+        background: no-repeat center $color-icons url(../img/icons/chat.png);
+        margin-left: 16px;
+      }
+      .header-icons-tablet__profile {
+        background: no-repeat center $color-icons url(../img/icons/profile.png);
+        margin-left: 16px;
+      }
+    }
+
+    .header-icons-mobi:after {
+      content: '';
+      position: absolute;
+      top: 4px;
+      bottom: 4px;
+      border-left: 2px solid $color-border;
+      z-index: 2;
+    }
+
+    .header-icons-mobi {
+      display: flex;
+      padding-left: 16px;
+      position: relative;
+
+      .header-icons-mobi__repair {
+        background: no-repeat center $color-icons url(../img/icons/repair.png);
+        margin-left: 16px;
+      }
+      .header-icons-mobi__status {
+        background: no-repeat center $color-icons url(../img/icons/check-status.png);
+        margin-left: 16px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .header-icons-tablet {
+    display: none !important;
+  }
+}
+@media (min-width: 1366px) {
+  .header {
+    display: none;
+  }
+}

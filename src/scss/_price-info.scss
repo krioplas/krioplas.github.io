@@ -1,0 +1,15 @@
+.price-info{
+  padding: 16px 24px;
+  border-bottom: 1px solid $border-bottom;
+    p{
+      margin-bottom: 16px;
+    }
+  .price-info__link{
+    margin-top: 16px;
+    text-decoration: none;
+    font-family: "TT Lakes-Bold", sans-serif;
+    color: black;
+    padding-right: 20px;
+    background: no-repeat right url(../img/icons/dropdown.png);
+  }
+}

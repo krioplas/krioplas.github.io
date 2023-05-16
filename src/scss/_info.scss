@@ -1,0 +1,57 @@
+.info{
+  display: flex;
+  border-bottom: 1px solid $border-bottom;
+  padding:24px;
+
+  .info-text-cont{
+    height: 82px;
+    overflow: hidden;
+
+    p{
+      margin-bottom: 24px;
+    }
+    
+  }
+  .info-text-cont--active{
+    height: 80%;
+  }
+  
+  .info-text{
+    width: auto;
+    padding-right: 24px;
+    .info-text__button--active{
+      background: no-repeat left url(../img/hiding-button-rotate.png);
+    }
+  }
+}
+@media (max-width:768px){
+  .info{
+    display: flex;
+    flex-direction: column;
+    .info__img{
+      margin: 32px;
+    }
+
+    
+  }
+}
+@media (min-width:1366px){
+  .info{
+    .info-text-cont{
+    max-height: 100%;
+    overflow: hidden;
+    }
+  .info-text-cont--active{
+    height: 120px;
+    }
+  }
+}
+
+.info-text__button{
+  font-family: 'TT Lakes-Medium', sans-serif;
+  border: none;
+  font-size: 16px;
+  margin-top: 16px;
+  padding-left: 16px;
+  background: no-repeat left url(../img/hiding-button.png);
+}
