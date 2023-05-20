@@ -2,6 +2,36 @@
   max-width: 1120px;
   background-color: #f8f8f8;
 }
+body {
+  font-family: 'TT Lakes-Regular', sans-serif;
+}
+.swiper-pagination-bullet-active{
+  background: $color-text !important;
+}
+.icons-size {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.icons-size:hover{
+  animation: shake-rectangle-02 .16s infinite alternate;
+
+}
+.slide-price-button:hover{
+  animation: shake-rectangle-02 .16s infinite alternate;
+}
+
+.slider-content__link:hover{
+  animation: shake-rectangle-02 .16s infinite alternate;
+}
+
+@keyframes shake-rectangle-02 {
+  0% { transform: translate(-1px, 1px) rotate(-7deg); }
+  33% { transform: translate(-2px, 2px) rotate(7deg); }
+  66% { transform: translate(2px, 2px) rotate(-7deg); }
+  100% { transform: translate(2px, 2px) rotate(7deg); }
+}
+
 .header {
   padding: 0 24px;
   display: flex;
@@ -10,7 +40,10 @@
   font-family: 'TT Lakes-Regular', sans-serif;
   border-bottom: 1px solid $border-bottom;
   background: #fff;
-
+  @media (min-width: 1366px) {
+      display: none;
+  }
+}
   .header__burger {
     width: 40px;
     height: 40px;
@@ -26,6 +59,9 @@
 
     .header-icons-tablet {
       display: flex;
+      @media (max-width: 768px) {
+          display: none !important;
+      }
 
       .header-icons-tablet__phone {
         background: no-repeat center $color-icons url(../img/icons/call.png);
@@ -64,14 +100,4 @@
       }
     }
   }
-}
-@media (max-width: 768px) {
-  .header-icons-tablet {
-    display: none !important;
-  }
-}
-@media (min-width: 1366px) {
-  .header {
-    display: none;
-  }
-}
+

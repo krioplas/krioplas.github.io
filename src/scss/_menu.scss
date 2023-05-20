@@ -1,16 +1,26 @@
 
-.menu-content{
-  .menu-head-icons{
-  .menu-head{
-    font-family: 'TT Lakes-Bold', sans-serif;
-    padding-left: 32px;
-    background: no-repeat left url(../img/highlight.png);
+.menu-content {
+  .menu-head-icons {
+    @media (min-width: 1366px){
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'TT Lakes-Medium', sans-serif;
     }
-    .menu-icons{
+    .menu-head {
+      font-family: 'TT Lakes-Bold', sans-serif;
+      padding-left: 32px;
+      background: no-repeat left url(../img/highlight.png);
+    }
+
+    .menu-icons {
       display: none;
+      @media (min-width: 1366px) {
+        display: flex;
+      }
     }
   }
-   
+}
   .menu {
     display: flex;
     font-family: 'TT Lakes-Medium', sans-serif;
@@ -18,10 +28,11 @@
     overflow: auto;
     white-space: nowrap;
     padding: 16px 24px;
-    
-
+    @media(min-width: 1120px){
+      flex-wrap: wrap;
+      padding: 12px;
+    }
     .menu__elm {
-      
       a {
         padding: 0 16px;
         height: 40px;
@@ -37,59 +48,42 @@
       border-radius: 6px;
       background: #ffffff;
     }
-    
+
   }
-}
-@media (min-width: 1366px) {
-  .menu-content{
-    
-
-    .menu-head-icons{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-family: 'TT Lakes-Medium', sans-serif;
-      .menu-icons{
-        display: flex;
-       .menu-icons__repair{
-        display: flex;
-        text-decoration: none;
-        .header-icons-mobi__repair{
-          width: 40px;
-          height: 40px;
-          background: $color-icons no-repeat center url(../img/icons/repair.png);
-          margin-right: 32px;
-
-          }
-        .text{
-          margin: auto;
-          padding-right: 16px;
-          color: $color-text;
-        }
-        }
-        .menu-icons__check-status{
-          display: flex;
-          text-decoration: none;
-          .header-icons-mobi__status{
-            width: 40px;
-            height: 40px;
-            background: $color-icons no-repeat center url(../img/icons/check-status.png);
-            margin-right: 32px;
-          }
-          .text{
-            margin: auto;
-            padding-right: 16px;
-            color: $color-text;
-          }
-        } 
-      }
+.menu-icons__repair{
+  @media (min-width: 1366px) {
+    display: flex;
+    text-decoration: none;
+  }
+  .header-icons-mobi__repair{
+    @media (min-width: 1366px) {
+      width: 40px;
+      height: 40px;
+      background: $color-icons no-repeat center url(../img/icons/repair.png);
+      margin-right: 32px;
     }
   }
 }
-@media(min-width: 1120px){
-  .menu{
-    flex-wrap: wrap;
-    padding: 12px;
+.menu-icons__check-status{
+  @media (min-width: 1366px) {
+    display: flex;
+    text-decoration: none;
+  }
+  .header-icons-mobi__status{
+    @media (min-width: 1366px) {
+      width: 40px;
+      height: 40px;
+      background: $color-icons no-repeat center url(../img/icons/check-status.png);
+      margin-right: 32px;
+    }
+  }
+
 }
+.text{
+  @media (min-width: 1366px) {
+    margin: auto;
+    padding-right: 16px;
+    color: $color-text;
+  }
 }
 

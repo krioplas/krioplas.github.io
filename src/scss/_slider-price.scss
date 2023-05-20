@@ -1,5 +1,5 @@
 .slider-price{
-  
+
   font-size: 14px;
 
   .slider-price__head{
@@ -14,7 +14,6 @@
     padding-left: 24px;
   }
   .swiper{
-    height: 260px;
     .swiper-wrapper{
       .content-price{
         display: flex;
@@ -28,17 +27,17 @@
         padding: 16px;
 
         .slide-price{
-          
+
           .slide-price__repair{
             color: $color-text;
-            font-size: 14px; 
+            font-size: 14px;
           }
         }
         .slide-price-order{
           display: flex;
           justify-content: space-between;
           align-items: center;
-          
+
         }
       }
       .slide-price--head{
@@ -48,24 +47,26 @@
   }
   @media (min-width:768px){
     .price{
-      .swiper-wrapper{      
-        width: 100%;
-        height: 100%;
+      .swiper-wrapper{
+        display: block !important;
+        border-radius: 16px;
+        margin: 0 24px;
+
         .content-price{
           display: flex;
           flex-direction: row;
           align-items: center;
-          width: 100%;
+          width: 95%;
           height: 63px;
           margin: 0;
           border-radius: 0;
           .slide-price-order{
-            
+
             width: 30%;
           }
           .slide-price{
             width: 15%;
-            
+
             .slide-price__repair{
               display: none;
             }
@@ -89,8 +90,8 @@
           color:  $color-text;
         }
       }
-      
-      
+
+
     }
   }
 }

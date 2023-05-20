@@ -1,6 +1,5 @@
-
-@media(min-width:1366px){
-  .cps-content{
+.cps-content{
+  @media(min-width:1120px){
     display: flex;
     justify-content: center;
   }
