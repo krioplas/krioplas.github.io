@@ -70,20 +70,22 @@
             .slide-price__repair{
               display: none;
             }
+            &:nth-child(1){
+              width: 55%;
+            }
           }
-          .slide-price:nth-child(1){
-            width: 55%;
+
+          &:not(:first-child):not(:last-child):after{
+            content: '';
+            width: 96%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left:16px;
+            border-bottom: 1px solid $color-border;
           }
         }
-        .content-price:not(:first-child):not(:last-child):after{
-          content: '';
-          width: 96%;
-          height: 100%;
-          position: absolute;
-          top: 0;
-          left:16px;
-          border-bottom: 1px solid $color-border;
-        }
+
         .slide-price--head{
           background: #f8f8f8;
           align-items: center;

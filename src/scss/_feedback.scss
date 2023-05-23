@@ -38,7 +38,7 @@
 .feedback-forms{
   text-align: center;
   font-family: "TT Lakes-Medium", sans-serif;
-  .feedback-forms__input{
+  &__input{
     width: 288px;
     height: 48px;
     border: 2px solid $color-border;

@@ -42,13 +42,12 @@
         text-decoration: none;
         color: $color-text;
       }
+      &--active {
+        border: 2px solid $border-menu;
+        border-radius: 6px;
+        background: #ffffff;
+      }
     }
-    .menu__elm--active {
-      border: 2px solid $border-menu;
-      border-radius: 6px;
-      background: #ffffff;
-    }
-
   }
 .menu-icons__repair{
   @media (min-width: 1366px) {
